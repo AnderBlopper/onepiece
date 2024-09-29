@@ -4,8 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
-    background-color: transparent;
+    background-color: black; /* Fondo oscuro para que el texto blanco se vea mejor */
 }
 
 .container {
@@ -14,25 +13,14 @@ body {
 }
 
 .text {
-    width: 100%;
-    font-size: 36px;
+    font-size: 48px; /* Ajusté el tamaño de la fuente para hacerlo más grande */
     font-weight: bold;
-    color: #fff;
-    text-shadow: 3px 3px 3px #c00;
-    animation: rotate 20s infinite linear;
-}
-
-.animation {
-    animation: rotate 5s infinite linear, stay 10s infinite;
+    color: white; /* Texto blanco */
+    text-shadow: 3px 3px 5px red; /* Sombra del texto roja para que se vea mejor */
+    animation: rotate 10s infinite linear; /* Rotación continua de 10 segundos */
 }
 
 @keyframes rotate {
     0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
-
-@keyframes stay {
-    0%, 25% { transform: rotateY(0deg); }
-    50%, 75% { transform: rotateY(0deg); }
     100% { transform: rotateY(360deg); }
 }
